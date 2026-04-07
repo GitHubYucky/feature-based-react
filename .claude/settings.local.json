@@ -1,0 +1,21 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(npm test:*)",
+      "Bash(npm run:*)",
+      "Bash(git reset:*)",
+      "Bash(git push:*)",
+      "Bash(npx vitest:*)",
+      "Bash(pnpm:*)",
+      "Bash(yarn)",
+      "Bash(yarn test:*)",
+      "Bash(git checkout:*)",
+      "Bash(git restore:*)",
+      "Bash(/workspaces/bulletproof-react/.gitignore:*)",
+      "Bash(node_modules/.bin/msw init:*)",
+      "Bash(pip show:*)",
+      "Bash(yarn check-types:*)",
+      "Bash(npx tsc:*)"
+    ]
+  }
+}
