@@ -75,12 +75,12 @@ docs/ideas/initial-requirements.md ← ここにアイデアを書いておく
 
 | 順番 | ドキュメント | スキル | 内容 |
 |---|---|---|---|
-| 1 | `docs/product-requirements.md` | `prd-writing` | 誰のために何を作るか。KPI・ユーザーストーリー・優先度（P0/P1/P2） |
-| 2 | `docs/functional-design.md` | `functional-design` | 機能の詳細設計。データモデル・ユースケース・API設計 |
-| 3 | `docs/architecture.md` | `architecture-design` | 技術スタック・レイヤー構造・パフォーマンス・セキュリティ要件 |
-| 4 | `docs/repository-structure.md` | `repository-structure` | ディレクトリ構成・命名規則・依存ルール |
-| 5 | `docs/development-guidelines.md` | `development-guidelines` | コーディング規約・ブランチ戦略・テスト方針・レビュープロセス |
-| 6 | `docs/glossary.md` | `glossary-creation` | プロジェクト固有の用語定義 |
+| 1 | `docs/continuous/product-requirements.md` | `prd-writing` | 誰のために何を作るか。KPI・ユーザーストーリー・優先度（P0/P1/P2） |
+| 2 | `docs/continuous/functional-design.md` | `functional-design` | 機能の詳細設計。データモデル・ユースケース・API設計 |
+| 3 | `docs/continuous/architecture.md` | `architecture-design` | 技術スタック・レイヤー構造・パフォーマンス・セキュリティ要件 |
+| 4 | `docs/continuous/repository-structure.md` | `repository-structure` | ディレクトリ構成・命名規則・依存ルール |
+| 5 | `docs/continuous/development-guidelines.md` | `development-guidelines` | コーディング規約・ブランチ戦略・テスト方針・レビュープロセス |
+| 6 | `docs/continuous/glossary.md` | `glossary-creation` | プロジェクト固有の用語定義 |
 
 #### 流れ
 
@@ -294,7 +294,7 @@ doc-review で docs/functional-design.md をレビューして。修正案まで
 
 ## Git との連携
 
-機能追加の流れは `docs/git-branch-rules.md` の「新機能の開発」パターンに従います。
+機能追加の流れは `docs/project/git-branch-rules.md` の「新機能の開発」パターンに従います。
 
 ```bash
 # 1. develop を最新化してブランチを切る
@@ -326,7 +326,7 @@ git branch -d feature/my-feature
 `.steering/[日付]-[機能名]/tasklist.md` を確認してください。
 `[ ]` が残っているタスクから再開できます。
 
-**Q: 永続ドキュメント（`docs/`）はいつ更新する？**
+**Q: 永続ドキュメント（`docs/continuous/`）はいつ更新する？**
 
 `feature-add` の振り返りで、変更がアーキテクチャや設計に影響する場合に更新します。
 
