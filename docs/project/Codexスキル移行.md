@@ -6,25 +6,25 @@
 
 ## 追加した skill
 
-- `.codex/skills/repo-setup`
+- `.codex/skills/setup-repo`
 - `C:\Users\regis\.codex\skills\setup-project`
-- `.codex/skills/feature-add`
-- `.codex/skills/doc-review`
-- `.codex/skills/implementation-validation`
+- `.codex/skills/add-feature`
+- `.codex/skills/review-doc`
+- `.codex/skills/validate-implementation`
 
 ## 役割の対応
 
 - `.claude/commands/setup-project.md`
   - `setup-project`
-  - `repo-setup`
+  - `setup-repo`
 - `.claude/commands/add-feature.md`
-  - `feature-add`
+  - `add-feature`
 - `.claude/commands/review-docs.md`
-  - `doc-review`
+  - `review-doc`
 - `.claude/agents/doc-reviewer.md`
-  - `doc-review`
+  - `review-doc`
 - `.claude/agents/implementation-validator.md`
-  - `implementation-validation`
+  - `validate-implementation`
 
 ## 使い分け
 

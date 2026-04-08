@@ -41,5 +41,5 @@ setup-project でポモドーロアプリの初期 docs を整備して。
 ```
 
 ```text
-feature-add でタイマー機能を追加して。
+add-feature でタイマー機能を追加して。
 ```

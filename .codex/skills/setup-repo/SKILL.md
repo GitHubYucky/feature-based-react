@@ -1,9 +1,9 @@
 ---
-name: repo-setup
+name: setup-repo
 description: 新規セットアップや初回整理時に使う。このリポジトリの docs、.claude、実装構造を読み、必要な設計文書と進め方を整理する。
 ---
 
-# Repo Setup
+# Setup Repo
 
 ## Use this skill when
 
