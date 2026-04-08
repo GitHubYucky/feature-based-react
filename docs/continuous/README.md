@@ -1,12 +1,14 @@
 # Continuous Docs
 
 `continuous/` は `prd-writing` を起点に作成・更新する永続ドキュメントの置き場です。
+ファイル名も本文も日本語で管理します。
+特に `開発ガイドライン.md` や `機能設計.md` では、テスト駆動で進める前提、検証方針、UI とロジックに対するテストの 1 対 1 対応方針も日本語で明記します。
 
 想定する主なファイル:
 
-- `product-requirements.md`
-- `functional-design.md`
-- `architecture.md`
-- `repository-structure.md`
-- `development-guidelines.md`
-- `glossary.md`
+- `プロダクト要求定義.md`
+- `機能設計.md`
+- `アーキテクチャ設計.md`
+- `リポジトリ構造.md`
+- `開発ガイドライン.md`
+- `用語集.md`

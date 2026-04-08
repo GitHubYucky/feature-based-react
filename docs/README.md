@@ -5,6 +5,8 @@
 - `ideas/`: インプット用のメモ、要件草案、着手前の素材
 - `assets/`: ドキュメントから参照する画像や補助素材
 - `project/`: このリポジトリや現在のプロジェクト固有の資料、運用ガイド、分析、概要
-- `continuous/`: `prd-writing` を起点に作る永続ドキュメント群
+- `continuous/`: `prd-writing` を起点に日本語で作る永続ドキュメント群
 
-`continuous/` には `product-requirements.md`、`functional-design.md`、`architecture.md`、`repository-structure.md`、`development-guidelines.md`、`glossary.md` のような継続更新対象を配置します。
+`continuous/` にはファイル名・本文ともに日本語の永続ドキュメントを配置します。
+テスト方針は、テスト駆動を基本とし、UI・ロジックそれぞれに対して原則 1 対 1 で対応するテストコードを定義する前提で記述します。
+例: `プロダクト要求定義.md`、`機能設計.md`、`アーキテクチャ設計.md`、`リポジトリ構造.md`、`開発ガイドライン.md`、`用語集.md`
