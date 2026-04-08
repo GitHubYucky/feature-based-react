@@ -7,7 +7,7 @@
 ## 追加した skill
 
 - `.codex/skills/setup-repo`
-- `C:\Users\regis\.codex\skills\setup-project`
+- `.codex/skills/setup-project`
 - `.codex/skills/add-feature`
 - `.codex/skills/prd-writing`
 - `.codex/skills/functional-design`
