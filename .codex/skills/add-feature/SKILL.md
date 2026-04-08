@@ -1,9 +1,9 @@
 ---
-name: feature-add
+name: add-feature
 description: 新機能追加時に使う。既存 feature パターンを調べ、最小変更で実装し、必要な検証と docs 更新まで進める。
 ---
 
-# Feature Add
+# Add Feature
 
 ## Use this skill when
 
