@@ -33,6 +33,10 @@
 ## 次の依頼例
 
 ```text
+brainstorm でポモドーロアプリの initial-requirements を壁打ちして。
+```
+
+```text
 setup-project でポモドーロアプリの初期 docs を整備して。
 ```
 
