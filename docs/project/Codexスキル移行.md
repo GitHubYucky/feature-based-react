@@ -9,6 +9,12 @@
 - `.codex/skills/setup-repo`
 - `C:\Users\regis\.codex\skills\setup-project`
 - `.codex/skills/add-feature`
+- `.codex/skills/prd-writing`
+- `.codex/skills/functional-design`
+- `.codex/skills/architecture-design`
+- `.codex/skills/repository-structure`
+- `.codex/skills/development-guidelines`
+- `.codex/skills/glossary-creation`
 - `.codex/skills/review-doc`
 - `.codex/skills/validate-implementation`
 
@@ -19,6 +25,18 @@
   - `setup-repo`
 - `.claude/commands/add-feature.md`
   - `add-feature`
+- `.claude/skills/prd-writing`
+  - `prd-writing`
+- `.claude/skills/functional-design`
+  - `functional-design`
+- `.claude/skills/architecture-design`
+  - `architecture-design`
+- `.claude/skills/repository-structure`
+  - `repository-structure`
+- `.claude/skills/development-guidelines`
+  - `development-guidelines`
+- `.claude/skills/glossary-creation`
+  - `glossary-creation`
 - `.claude/commands/review-docs.md`
   - `review-doc`
 - `.claude/agents/doc-reviewer.md`
