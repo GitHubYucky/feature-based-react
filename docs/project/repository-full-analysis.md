@@ -1,0 +1,161 @@
+﻿# Full Repository Analysis
+
+最終確認日: 2026-04-08
+
+## 全体要約
+
+このリポジトリは、現時点ではポモドーロアプリではなく、feature-based React のボイラープレートです。
+
+確認できた意味のある層は次の 3 つです。
+
+1. `src`: 実行対象の React アプリ
+2. `docs`: 設計と開発運用の文書
+3. `.claude` / `.codex`: AI 支援の運用資産
+
+ポモドーロアプリとして見たときの現状は、次の状態です。
+
+- 実装は `Welcome` / `Post` / `Product` のサンプル構成
+- README はテンプレート説明のまま
+- docs は開発運用の土台としては使えるが、アプリ固有の内容が未整備
+- ポモドーロ固有の要件、画面、状態、用語がまだ定義されていない
+
+## 現行実装
+
+### `src`
+
+現在のアプリ構成:
+
+```text
+src/
+  core/
+  features/
+    Welcome/
+    Post/
+    Product/
+  main.tsx
+  router.tsx
+```
+
+実装上の事実:
+
+- `Welcome` はトップページの導線
+- `Post` は投稿一覧サンプル
+- `Product` は商品一覧サンプル
+- `router.tsx` はこれら 3 feature を集約
+
+ポモドーロアプリとのずれ:
+
+- timer feature が存在しない
+- session history や settings に相当する feature がない
+- 商品一覧、投稿一覧はドメイン上は不要
+- ルーティングがサンプル画面前提のまま
+
+### `docs`
+
+`docs` には運用文書がすでにあります。
+
+活かせる点:
+
+- `project/development-workflow.md` は Codex / skill ベースの進め方になっている
+- `project/git-branch-rules.md` などの周辺文書はそのまま使える
+- `project/repository-full-analysis.md` のような現状整理の置き場がある
+
+不足している点:
+
+- ポモドーロアプリの要求仕様
+- 画面一覧
+- タイマーの状態遷移
+- セッション記録の扱い
+- 用語定義
+
+### `.claude` / `.codex`
+
+運用資産としては十分あります。
+
+使う入口:
+
+- `repo-setup`: 初回整理
+- `setup-project`: 初期 docs 整備
+- `feature-add`: 機能追加
+- `doc-review`: 文書レビュー
+- `steering`: 全フェーズの計画・記録
+
+## 主な不整合
+
+### 1. アプリの目的と実装が一致していない
+
+ユーザーの意図はポモドーロアプリですが、実装は汎用サンプルです。
+
+影響:
+
+- 次に何を作るべきかをコードから判断しづらい
+- docs と実装のアプリ固有性が弱い
+
+### 2. README が現状と今後の方向を示していない
+
+`README.md` は boilerplate 説明のままで、ポモドーロアプリの入口になっていません。
+
+影響:
+
+- 初見でこのリポジトリの目的を誤解しやすい
+
+### 3. 初期要件の置き場が未作成
+
+`docs/ideas/initial-requirements.md` がなく、立ち上げフローの開始点がありません。
+
+影響:
+
+- `repo-setup` や `setup-project` の次アクションが曖昧になる
+
+### 4. feature 名がドメインに沿っていない
+
+現状の `Post` / `Product` はテンプレート由来で、ポモドーロのドメイン境界を表していません。
+
+ポモドーロ寄りの候補:
+
+- `Timer`
+- `SessionHistory`
+- `Settings`
+- `Dashboard`
+
+## ポモドーロアプリとしての最小スコープ案
+
+最初の実装対象は次の程度が妥当です。
+
+### P0
+
+- 25 分タイマーの開始、停止、リセット
+- 1 セッション完了の表示
+- 残り時間の表示
+
+### P1
+
+- 短い休憩と長い休憩の切り替え
+- セッション回数の記録
+- タイマー設定の変更
+
+### P2
+
+- 日次の達成状況
+- 通知音
+- localStorage への保存
+
+## 優先アクション
+
+1. `docs/ideas/initial-requirements.md` にポモドーロアプリの初期要件を書く
+2. `setup-project` でポモドーロ向けの docs を整備する
+3. `feature-add` で最初の `Timer` feature を作る
+4. `README.md` を boilerplate 説明からポモドーロアプリ説明へ更新する
+5. `Post` / `Product` / `Welcome` を残すか置き換えるか決める
+
+## 次の入口
+
+短く依頼するなら次のどちらかです。
+
+```text
+setup-project でポモドーロアプリの初期 docs を整備して。
+```
+
+```text
+feature-add でタイマー機能を追加して。
+```
